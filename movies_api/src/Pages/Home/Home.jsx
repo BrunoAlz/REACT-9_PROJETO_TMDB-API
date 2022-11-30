@@ -1,5 +1,6 @@
 // Hooks
 import { useState, useEffect } from "react";
+import MovieCard from "../../components/MovieCard";
 
 // Env variables
 const movieURL = import.meta.env.VITE_API;
@@ -23,8 +24,9 @@ const Home = () => {
   return (
     <div className="container">
       <h2 className="title">Melhores Filmes</h2>
-      {topMovies.length > 0 && topMovies.map((movie) => <p key={movie.id}>{movie.title}</p>)}
-      <p>Resultados: {topMovies.length}</p>
+      {topMovies.length > 0
+        ? topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)
+        : null}
     </div>
   );
 };

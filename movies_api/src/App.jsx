@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h2>Movies API</h2>
       <Outlet />
     </div>
   );

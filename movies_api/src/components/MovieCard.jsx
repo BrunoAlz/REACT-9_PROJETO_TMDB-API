@@ -15,9 +15,10 @@ const MovieCard = ({ movie, showLink = true }) => {
       <p>
         <FaStar /> {movie.vote_average}
       </p>
-        {showLink ? (
-          <Link to={`/movie/${movie.id}`}>Detalhes</Link>
-        ) : null}
+      <p>
+        Total de Votos: <span>{movie.vote_count}</span>
+      </p>
+      {showLink ? <Link to={`/movie/${movie.id}`}>Detalhes</Link> : null}
     </div>
   );
 };

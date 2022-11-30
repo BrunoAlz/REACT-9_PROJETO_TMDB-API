@@ -36,8 +36,14 @@
 
 .movies-container div img,
 .movies-container div h2,
+.movies-container div span,
 .movies-container div p {
   margin-bottom: 1rem;
+}
+
+.movies-container div span {
+  color: #F7d354;
+  font-weight: bold;
 }
 
 .movies-container div svg {

@@ -1,3 +1,6 @@
+// CCS
+import './Navbar.css'
+
 // Routes
 import { Link } from "react-router-dom";
 
